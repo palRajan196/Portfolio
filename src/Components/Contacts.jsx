@@ -10,6 +10,10 @@ import { Instagram } from '@mui/icons-material';
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export const Contacts = () => {
+  const ServiceId = import.meta.env.VITE_REACT_APP_ServiceId;
+  const TemplateId = import.meta.env.VITE_REACT_APP_TemplateId;
+  const UserKey = import.meta.env.VITE_REACT_APP_UserKey;
+
     const form = useRef();
   const [Name, setName] = useState("");
   const [Email, setEmail] = useState("");
@@ -28,7 +32,7 @@ export const Contacts = () => {
 
       console.log(Data);
 
-    emailjs.send('service_1y2z2tq', 'template_58osuz6', Data, 'uIch0-DICVA6sWSI-')
+    emailjs.send(ServiceId, TemplateId, Data, UserKey)
       .then((result) => {
         AfterSend("Sent");
         setName("");
