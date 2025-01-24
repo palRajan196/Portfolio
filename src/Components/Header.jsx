@@ -2,7 +2,7 @@ import React from "react";
 import myImage from "../Photos/myImage2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars,faXmark} from "@fortawesome/free-solid-svg-icons";
-
+import codeHelp from "../Photos/image.gif";
 function Header(){
   var Sidebar = document.getElementById("sidebar-hidden");
 
@@ -24,10 +24,11 @@ function Header(){
         <div id="header">
       <div id="contain">
         <nav id="head">
-          <h1><span>W</span>eb</h1>
+        <img src={codeHelp} alt="" />
+          {/* <h1><span>W</span>eb</h1> */}
           <ul id="sidebar-hidden">
             {/* <i onclick={SidebarHidden} class="fa-solid fa-xmark"></i> */}
-            <div onClick={SidebarHidden}>
+            <div  onClick={SidebarHidden}>
             <FontAwesomeIcon icon={faXmark} id="Icon"/>
             </div>
            
