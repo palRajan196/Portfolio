@@ -10,7 +10,7 @@ export const Bottom = ()=>{
       <div>
         {/* Copyright <i class="fa-regular fa-copyright"></i> */}
        
-         <p>  <FontAwesomeIcon icon={faCopyright} className='Icon-email-phone'/> Designed and developed by Rajan Pal</p>
+         <p>  <FontAwesomeIcon icon={faCopyright} className='Icon-email-phone'/> Designed and developed by Rajan </p>
         {/* <i class="fa-solid fa-heart"></i> */}
         
          <p>Thanks for visiting my portfolio! <FontAwesomeIcon icon={faAppStore} className='Icon-email-phone'/> Let's create something amazing together.</p>
